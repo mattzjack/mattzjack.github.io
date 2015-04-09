@@ -32,10 +32,10 @@ def output_name():
     prae_f = praenomina_feminine[randint(0, len(praenomina_feminine) - 1)]
     nom = nomina[randint(0, len(nomina) - 1)]
     cog = cognomina[randint(0, len(cognomina) - 1)]
-    if chance != 0:
+    if chance == 0:
         print(
-            "Your Latin full name is:\n##### ##### #####\nCongrats! You win the nine ninety-nine a thousandth\
-chance!\nOnly one in a thousand is a real Roman who deserves a Latin name.")
+            "Your Latin full name is:\n##### ##### #####\nCongrats! You win the one a thousandth\
+chance!\nOnly 999 in a thousand is a real Roman who deserves a Latin name.")
     else:
         if value is 1:
             print("Your Latin full name is:\n" + prae_m + ' ' + nom + ' ' + cog)
