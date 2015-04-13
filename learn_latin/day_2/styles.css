@@ -1,0 +1,32 @@
+*
+{
+  font-family: sans-serif;
+}
+
+body
+{
+  text-align: center;
+}
+
+.wrapper
+{
+  width: 75%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+table, td
+{
+  border: 1px black solid;
+}
+
+td
+{
+  padding: 5px;
+  text-align: center;
+}
+
+.latin
+{
+  font-family: serif;
+}
