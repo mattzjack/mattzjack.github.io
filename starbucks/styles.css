@@ -1,0 +1,77 @@
+.title {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#all_in {
+  margin: auto;
+  width: 95%;
+  border: 1px black solid;
+}
+
+#content {
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+  display: flex;
+  align-content: center;
+}
+
+.content_box {
+  border: 1px black solid;
+  width: 49.6%;
+  height: 500px;
+  margin: 2px auto 2px auto;
+  overflow: scroll;
+}
+
+#title_banner {
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+}
+
+.img {
+  height: 100px;
+  margin-top: 2px;
+  border: 1px black solid;
+}
+
+.drink {
+  margin: 2px 2px 2px 2px;
+  width: 20%;
+  text-align: center;
+  border: 1px black solid;
+}
+
+.category {
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+  float: top;
+  line-height: 0%;
+}
+
+.subcategory {
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+  float: top;
+  line-height: 0%;
+}
+
+.tag {
+  margin: auto 2px 2px 2px;
+  border: 1px black solid;
+}
+
+.drinks {
+  float: top;
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+  align-content: center;
+}
+
+.row {
+  float: top;
+  margin: 2px 2px 2px 2px;
+  border: 1px black solid;
+  display: flex;
+  align-content: center;
+}
