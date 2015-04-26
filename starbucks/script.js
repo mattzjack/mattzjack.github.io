@@ -11,7 +11,7 @@ document.body.appendChild(container);
 container.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(calories, 20, 20, 0, Math.PI * 2);
-var material = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe: true});
+var material = new THREE.MeshBasicMaterial({color: 0xFAAFBE, wireframe: true});
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
