@@ -1,54 +1,57 @@
-var calories = 0;
-
-$(document).ready(function(){
-  $(".70").click(function(){
-    calories += 7;
-  });
-  $(".120").click(function(){
-    calories += 12;
-  });
-  $(".130").click(function(){
-    calories += 13;
-  });
-  $(".140").click(function(){
-    calories += 14;
-  });
-  $(".200").click(function(){
-    calories += 20;
-  });
-  $(".210").click(function(){
-    calories += 21;
-  });
-});
-
-var canvas = document.getElementById("canvas");
-
-var CANVAS_WIDTH = canvas.width;
-var CANVAS_HEIGHT = canvas.height;
-
+var calories = 1;
 
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize(CANVAS_WIDTH, CANVAS_HEIGHT);
-document.body.appendChild(canvas);
-canvas.appendChild(renderer.domElement);
+renderer.setSize(canvas.offsetWidth * .95, canvas.offsetHeight * .95);
 
-var geometry = new THREE.BoxGeometry(1, 1, 1);
+container = document.getElementById("canvas");
+document.body.appendChild(container);
+container.appendChild(renderer.domElement);
+
+var geometry = new THREE.SphereGeometry(calories, 20, 20, 0, Math.PI * 2);
 var material = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe: true});
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
-camera.position.y = 1;
-camera.position.z = 5;
+camera.position.y = 10;
+camera.position.z = 50;
 
-function render() {
+var render = function () {
   requestAnimationFrame(render);
 
   cube.rotation.y += 0.01;
+  cube.updateMatrix();
 
   renderer.render(scene, camera);
-}
+};
 
-render();
+var updateSphere = function(newRadius) {
+  cube.scale.x += newRadius;
+  cube.scale.y += newRadius;
+  cube.scale.z += newRadius;
+};
+
+$(document).ready(function(){
+  $(".70").click(function(){
+    updateSphere(.7);
+  });
+  $(".120").click(function(){
+    updateSphere(1.2);
+  });
+  $(".130").click(function(){
+    updateSphere(1.3);
+  });
+  $(".140").click(function(){
+    updateSphere(1.4);
+  });
+  $(".200").click(function(){
+    updateSphere(2.0);
+  });
+  $(".210").click(function(){
+    updateSphere(2.1);
+  });
+});
+
+requestAnimationFrame(render);
