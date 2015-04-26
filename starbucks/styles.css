@@ -22,6 +22,7 @@
   height: 500px;
   margin: 2px auto 2px auto;
   overflow: scroll;
+  align-items: center;
 }
 
 #title_banner {
@@ -74,4 +75,9 @@
   border: 1px black solid;
   display: flex;
   align-content: center;
+}
+
+#right_canvas {
+  border: 1px black solid;
+  margin: 2px 2px 2px 2px;
 }
