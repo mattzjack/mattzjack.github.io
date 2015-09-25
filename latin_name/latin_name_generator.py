@@ -75,7 +75,7 @@ Paulla, Postuma, Prima, Procula, Publia, \
 Quarta, Quinta, \
 Secunda, Septima, Servia, Sexta, Spuria, Statia, \
 Tertia, Titia, Tiberia, Tulla, \
-Vibia, Volusa, Vopisca,\
+Vibia, Volusa, Vopisca, \
 "
 nomina = "\
 Aburius\n\
