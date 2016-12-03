@@ -4,10 +4,10 @@ var a;
 var b = true;
 while(b)
 {
-  a = prompt("enter your Latin full name:\nif you have forgotten, enter EXACTLY \"I'm a pig\".");
-  if (a == "I'm a pig")
+  a = prompt("enter your Latin full name:\nif you have forgotten, enter EXACTLY \"Igpay Atinlay\".");
+  if (a == "Igpay Atinlay")
   {
-    alert("remember your name!");
+    alert("remember your name!\nand Igpay Atinlay is one thing that you are not going to learn about here..");
     b = false;
   }
   else if (a == null | a == "")
