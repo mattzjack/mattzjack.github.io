@@ -30,3 +30,8 @@ td
 {
   font-family: serif;
 }
+
+#nextPortal {
+    font-size: small;
+    float: right;
+}

@@ -1,3 +1,22 @@
 #returnPortal {
     font-size: small
 }
+
+.poem {
+    font-family: sans-serif;
+}
+
+.date {
+    color: #aaaaaa;
+    font-family: monospace;
+}
+
+.month {
+    color: #888888;
+    font-family: monospace;
+}
+
+.year {
+    color: #444444;
+    font-family: monospace;
+}
