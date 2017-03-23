@@ -1,0 +1,13 @@
+#main {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: beige;
+}
+
+.newIcon {
+    font-size: 7pt;
+    font-family: helvetica;
+    background-color: black;
+    color: white;
+}
