@@ -11,3 +11,21 @@
     background-color: black;
     color: white;
 }
+
+#newPoem {
+    padding-left: 8%;
+    padding-bottom: 5%;
+    color: #aaaaaa;
+    font-family: monospace;
+}
+
+#newPoemTitle {
+    text-align: center;
+    font-family: monospace;
+    color: #555555;
+}
+
+#poem {
+    font-family: inherit;
+    color: #555555;
+}
