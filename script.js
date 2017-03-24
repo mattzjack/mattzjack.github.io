@@ -1,3 +1,3 @@
 $(function(){
-    $("#newPoem").load("./tpotd/index.html .poem:first");
+    $("#newPoem").load("./tpotd/index.html #newPoem");
 });
