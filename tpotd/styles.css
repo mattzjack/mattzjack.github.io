@@ -32,3 +32,8 @@
 #footer {
     margin-left: 2%;
 }
+
+.label {
+    font-size: small;
+    font-family: monospace;
+}
