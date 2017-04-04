@@ -1,0 +1,23 @@
+#header {
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#main {
+    width: 50%;
+    margin: auto;
+}
+
+#footer {
+    margin-left: 2%;
+}
+
+#returnPortal {
+    font-size: small
+}
+
+.words {
+    background-color: beige;
+    padding: 2%;
+}
