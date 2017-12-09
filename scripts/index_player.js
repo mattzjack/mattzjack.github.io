@@ -5,7 +5,6 @@ $(function() {
     var x = 1;
 
     $("#togglePlay").click(function() {
-        console.log("toggle clicked");
         widget.toggle();
     });
 });
