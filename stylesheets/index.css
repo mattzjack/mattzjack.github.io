@@ -35,3 +35,9 @@ footer {
     color: #999999;
     font-size: 11px;
 }
+
+.centering
+{
+    margin: auto;
+    width: 25%;
+}
